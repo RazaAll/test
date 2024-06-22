@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="index.html">
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Rent a Car</title>
+      </head>
+      <body>
+        <center>
+           <h1> Karachi Rent A Car<span></span></a></h1>
+
+        </center>
+    
+          <form id="rental-form" action="#" style="margin: 0 auto; width: 50%;">
+              <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="pickup-location">Pick-up Location:</label>
+                  <select id="pickup-location" name="pickupLocation" required style="width: 100%; padding: 8px; border: 1px solid #ccc; background-color: gainsboro; border-radius: 4px;">
+                      <option value="">-- Select Location --</option>
+                      <option value="location1">Korangi</option>
+                      <option value="location2">Baldia </option>
+                      <option value="location3">Nazimabad</option>
+                  </select>
+              </div>
+      
+              <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="dropoff-location">Drop-off Location (optional):</label>
+                  <select id="dropoff-location" name="dropoffLocation" style="width: 100%; padding: 8px; border: 1px solid #ccc; background-color: gainsboro; border-radius: 4px;">
+                      <option value="">-- Same as Pick-up --</option>
+                      <option value="location1">Landhi</option>
+                      <option value="location2">Gulshan-e-Iqbal</option>
+                      <option value="location3">Gulistan-e-Johar</option>
+                  </select>
+              </div>
+      
+              <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="pickup-date">Pick-up Date:</label>
+                  <input type="date" id="pickup-date" name="pickupDate" required style="width: 100%; padding: 8px; border: 1px solid #ccc; background-color: gainsboro; border-radius: 4px;">
+              </div>
+      
+              <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="dropoff-date">Drop-off Date:</label>
+                  <input type="date" id="dropoff-date" name="dropoffDate" required style="width: 100%; padding: 8px; border: 1px solid #ccc; background-color: gainsboro; border-radius: 4px;">
+              </div>
+      
+              <div class="form-group" style="margin-bottom: 15px color: #000; background-origin: padding-box;; ;">
+                  <label for="car-type">Car Type:</label>
+                  <select id="car-type" name="carType" required style="width: 100%; padding: 8px; border: 1px solid #ccc; background-color: gainsboro; border-radius: 4px;">
+                      <option value="">-- Select Car Type --</option>
+                      <option value="economy">Economy</option>
+                      <option value="compact">Compact</option>
+                      <option value="midsize">Midsize</option>
+                      <option value="fullsize">Fullsize</option>
+                      <option value="suv">SUV</option>
+                  </select>
+               </div>
+      <br>
+             <center> <button type="submit" onclick="handleSubmit()"> Submit </button>
+          </form></center>
+      
+          <script>
+              function handleSubmit() {
+                  event.preventDefault(); // Prevent default form submission
+      
+                  // Get form data
+                  const pickupLocation = document.getElementById('pickup-location').value;
+                  const dropoffLocation = document.getElementById('dropoff-location').value;
+                  const pickupDate = document.getElementById('pickup-date').value;
+                  const dropoffDate = document.getElementById('dropoff-date').value;
+                  const carType = document.getElementById('car-type').value;
+      
+                  // Here, you can process the form data (e.g., send it to a server)
+                  console.log("Pickup Location:", pickup
+      
+
+</body>
+</html>
